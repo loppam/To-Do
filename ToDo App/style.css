@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    min-width: 250px;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    text-align: center;
+    padding: 30px 40px;
+    background-color: green;
+    color: white;
+}
+h2.title{
+    font-size: 40px;
+    margin: 5px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input{
+    margin: 0;
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 75%;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  color: white;
+  background-color: #555;
+  text-align: center;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-end-end-radius: 30px;
+  border-start-end-radius: 30px;
+}
+.addBtn:hover {
+    background-color: rgb(34, 186, 34);
+  }
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable 
+    SAW  THIS ONLINE SHA*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li:nth-child(even) {
+    background: green;
+    color: white;
+  }
+  
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  /* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: green;
+  color: white;
+}
+.close:nth-child(even):hover {
+  background-color: white;
+  color: green;
+}
+.bottom{
+    position: fixed;
+    padding: 0 auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    color: white;
+    background-color: green;
+    font-size: 20px;
+}
+span.col{
+    color: red;
+    font-size: 25px;
+}
